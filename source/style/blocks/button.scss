@@ -1,0 +1,48 @@
+.button {
+	text-align: center;
+	
+	*[type=submit] {
+		width: 300px;
+		padding: 15px 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $white;
+		background-color: $base;
+		border: none;
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgba($base, .8);
+		}
+	}
+
+	&.disabled {
+		position: relative;
+
+		*[type=submit] {
+			background-color: $grey;
+			color: rgba($white, .3);
+			cursor: not-allowed;
+		}
+
+		&::before {
+			content: "\f110";
+			font-family: $icons;
+			font-size: 34px;
+
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			animation: spin 1.5s ease-in-out infinite;
+		}
+	}
+}
+
+
+@keyframes spin {
+	0%   { transform: rotate3d(0, 0, 1, 0deg); }
+	100% { transform: rotate3d(0, 0, 1, 360deg); }
+}

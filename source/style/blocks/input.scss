@@ -1,0 +1,23 @@
+.input {
+	@include inputPlaceholder($grey);
+
+	padding: 15px 20px;
+	font-weight: bold;
+	border: 1px solid $base;
+	background-color: $white;
+}
+
+.textarea {
+	@extend .input;
+
+	height: 300px;
+	resize: vertical;
+}
+
+
+// Validation
+
+.invalid {
+	border: 1px solid $error;
+	background-color: rgba($error, .05);
+}

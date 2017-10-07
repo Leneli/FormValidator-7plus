@@ -8,16 +8,70 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/css/foundation.css">
-    <link rel="stylesheet" href="/css/app.css">
-    <script src="/js/foundation.js" defer></script>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
     <script src="/js/app.js" defer></script><!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
   </head>
   <body>
-    <div class="greating">
-      <div class="greating_text">Hello! I'm test page.</div>
-      <div class="greating_picture"></div>
+    <div class="page-container">
+      <div class="form-container">
+        <h1>Form Validator 7+</h1>
+        <form class="form" id="form" action="" method="post">
+          <input type="hidden" name="hidden-1">
+          <input type="hidden" name="hidden-2">
+          <input type="hidden" name="hidden-3">
+          <label>It's required text field</label>
+          <input class="input" type="text" name="first-name" placeholder="First Name" required>
+          <label>It's required text field</label>
+          <input class="input" type="text" name="last-name" placeholder="Last Name" required>
+          <label>This input has not attribute "required", but this field should be required</label>
+          <input class="input" type="tel" name="tel" placeholder="Phone Number">
+          <label>Email address. Should be: ...</label>
+          <input class="input" type="email" name="email" placeholder="Email address">
+          <label>Password 1. Should be: ...</label>
+          <input class="input" type="password" name="password" placeholder="Password">
+          <label>Password 2. Should be:
+            <div>- equal Password 1</div>
+          </label>
+          <input class="input" type="password" name="password2" placeholder="Password">
+          <label>This input has not attribute "required", but this field should be required</label>
+          <select class="input" type="email" name="select">
+            <option value="">Please select</option>
+            <option value="1">Value 1</option>
+            <option value="2">Value 2</option>
+            <option value="3">Value 3</option>
+            <option value="4">Value 4</option>
+          </select>
+          <label>Checkboxes, required, minimum 1 check</label>
+          <div class="box"><span>
+              <input type="checkbox" name="check1" value="Check 1">Check 1</span><span>
+              <input type="checkbox" name="check1" value="Check 1">Check 1</span><span>
+              <input type="checkbox" name="check1" value="Check 1">Check 1</span><span>
+              <input type="checkbox" name="check1" value="Check 1">Check 1</span><span>
+              <input type="checkbox" name="check1" value="Check 1">Check 1</span></div>
+          <label>Checkboxes, not required, maximum 3 check</label>
+          <div class="box"><span>
+              <input type="checkbox" name="check2" value="Check 2">Check 2</span><span>
+              <input type="checkbox" name="check2" value="Check 2">Check 2</span><span>
+              <input type="checkbox" name="check2" value="Check 2">Check 2</span><span>
+              <input type="checkbox" name="check2" value="Check 2">Check 2</span><span>
+              <input type="checkbox" name="check2" value="Check 2">Check 2</span><span>
+              <input type="checkbox" name="check2" value="Check 2">Check 2</span><span>
+              <input type="checkbox" name="check2" value="Check 2">Check 2</span><span>
+              <input type="checkbox" name="check2" value="Check 2">Check 2</span><span>
+              <input type="checkbox" name="check2" value="Check 2">Check 2</span><span>
+              <input type="checkbox" name="check2" value="Check 2">Check 2</span></div>
+          <label>This input has not attribute "required", but this field should be required</label>
+          <div class="box"><span>
+              <input type="radio" name="radio">Yes</span><span>
+              <input type="radio" name="radio">No</span></div>
+          <div class="hr"></div>
+          <div class="button">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

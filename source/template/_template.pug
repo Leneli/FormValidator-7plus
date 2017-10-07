@@ -2,9 +2,9 @@ block variables
 
 //- INCLUDE
 //- mixins
-//- include .mixins/file
+//- include ./mixins/file
 //- common
-//- include .common/file
+//- include ./common/file
 
 doctype html
 html(lang="en")
@@ -20,9 +20,9 @@ html(lang="en")
 		//- favicon block start
 		//- favicon block end
 
-		link(rel="stylesheet" href="/css/foundation.css")
-		link(rel="stylesheet" href="/css/app.css")
-		script(src="/js/foundation.js" defer)
+		link(rel="stylesheet" href="css/foundation.css")
+		link(rel="stylesheet" href="css/app.css")
+		//-script(src="/js/foundation.js" defer)
 		script(src="/js/app.js" defer)
 
 		<!--[if lt IE 9]>
@@ -30,4 +30,10 @@ html(lang="en")
 		<![endif]-->
 
 	body
-		block content
+
+		.page-container
+			.form-container
+
+				h1 Form Validator 7+
+
+				block form

@@ -1,0 +1,18 @@
+.meaasge__error {
+	color: $error;
+	font-size: 14px;
+	line-height: 1;
+}
+
+.result {
+	margin: 10px 0 20px;
+	font-size: 18px;
+}
+
+.result__error {
+	color: $error;
+}
+
+.result__success {
+	color: $success;
+}

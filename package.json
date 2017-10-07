@@ -1,6 +1,6 @@
 {
-	"name": "gulp-builder",
-	"version": "1.0.0",
+	"name": "form-validator-7plus",
+	"version": "0.1.0",
 	"author": "e.kuklina",
 	"license": "ISC",
 	"scripts": {
@@ -12,19 +12,20 @@
 		]
 	},
 	"devDependencies": {
-		"autoprefixer": "latest",
-		"babel-preset-env": "latest",
-		"browser-sync": "latest",
+		"autoprefixer": "^7.1.4",
+		"babel-core": "^6.26.0",
+		"babel-preset-env": "^1.6.0",
+		"browser-sync": "^2.18.13",
 		"cssnano": "latest",
 		"del": "latest",
 		"gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
-		"gulp-babel": "latest",
+		"gulp-babel": "^7.0.0",
 		"gulp-cheerio": "latest",
 		"gulp-concat": "latest",
 		"gulp-concat-css": "latest",
 		"gulp-csso": "latest",
 		"gulp-eslint": "latest",
-		"gulp-imagemin": "latest",
+		"gulp-imagemin": "^3.4.0",
 		"gulp-load-plugins": "latest",
 		"gulp-notify": "latest",
 		"gulp-plumber": "latest",
@@ -33,7 +34,7 @@
 		"gulp-replace": "latest",
 		"gulp-sass": "latest",
 		"gulp-sass-glob": "latest",
-		"gulp-sourcemaps": "latest",
+		"gulp-sourcemaps": "^2.6.1",
 		"gulp-svg-sprite": "latest",
 		"gulp-svgmin": "latest",
 		"gulp-uglify": "latest",
@@ -41,10 +42,10 @@
 		"postcss-pxtorem": "latest"
 	},
 	"dependencies": {
-		"jquery": "latest",
 		"normalize.css": "latest",
 		"svgo": "latest"
 	},
 	"main": "index.js",
-	"repository": "https://github.com/Leneli/Gulp-builder.git"
+	"repository": "https://github.com/Leneli/FormValidator-7plus.git",
+	"description": "validator"
 }

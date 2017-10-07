@@ -1,1 +1,17 @@
 // MIXINS
+@mixin inputPlaceholder($color) {
+	&::-webkit-input-placeholder { color: rgba($color, 1); }
+	&::-moz-placeholder          { color: rgba($color, 1); }
+	&:-moz-placeholder           { color: rgba($color, 1); }
+	&:-ms-input-placeholder      { color: rgba($color, 1); }
+
+	&[placeholder]          { text-overflow: ellipsis; }
+	&::-moz-placeholder     { text-overflow: ellipsis; } 
+	&:-moz-placeholder      { text-overflow: ellipsis; } 
+	&:-ms-input-placeholder { text-overflow: ellipsis; }
+
+	&:focus::-webkit-input-placeholder { color: rgba($color, 0); transition: color 0.3s ease; }
+	&:focus::-moz-placeholder          { color: rgba($color, 0); transition: color 0.3s ease; }
+	&:focus:-moz-placeholder           { color: rgba($color, 0); transition: color 0.3s ease; }
+	&:focus:-ms-input-placeholder      { color: rgba($color, 0); transition: color 0.3s ease; }
+}
